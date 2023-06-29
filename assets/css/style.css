@@ -4,8 +4,8 @@
 }
 
 body {
-  background-color: #EDEACA;
-  text-transform: lowercase;  
+  background-color: #edeaca;
+  text-transform: lowercase;
   font-family: 'Dosis', sans-serif;
 }
 
@@ -15,6 +15,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .slogan h4 {
   letter-spacing: 0.09em;
 }
@@ -22,11 +23,11 @@ body {
 /*NAV ICONES*/
 .itens {
   display: flex;
-  justify-content: flex-start;  
+  justify-content: flex-start;
   align-items: center;
 }
 
-nav.a{
+nav.a {
   margin: 0.5em 2em 1em 1em;
 }
 
@@ -37,9 +38,10 @@ nav.a ul {
   align-items: center;
 }
 
-nav.a ul li img {    
-  height: 4.5vh;
+nav.a ul li img {
+  height: 4vh;
 }
+
 search-bar {
   display: flex;
   justify-content: center;
@@ -48,8 +50,8 @@ search-bar {
 }
 
 /*GRID*/
-.container-postagem {  
-  display: grid;  
+.container-postagem {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
@@ -59,59 +61,79 @@ search-bar {
     "foto-2 foto-4 foto-6";
 }
 
-.postagem { 
-  width: 30vh; /* Definindo a largura da imagem como 100% */
-  height: 30vh; /* Definindo a altura da imagem como 100% */    
+.bi-stars {
+  position: absolute;
+  bottom: 8;
+  right: 0;
+  top: 0;
+  margin: 10px;
+}
+
+.postagem {
+  position: relative;
+  width: 30vh;
+  /* Definindo a largura da imagem como 100% */
+  height: 30vh;
+  /* Definindo a altura da imagem como 100% */
   border-radius: 10px;
   object-fit: cover;
 }
 
-.foto-1 {  
-  grid-area: foto-1; 
+.foto-1 {
+
+  position: relative;
+  grid-area: foto-1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%; /* Margem interna */
+  padding: 5%;
+  /* Margem interna */
 }
 
-.foto-2 { 
-  grid-area: foto-2; 
+.foto-2 {
+  grid-area: foto-2;
   display: flex;
   justify-content: center;
-  align-items: center;  
-  padding: 5%; /* Margem interna */
+  align-items: center;
+  padding: 5%;
+  /* Margem interna */
 }
 
-.foto-3 {  
+.foto-3 {
   grid-area: foto-3;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%; /* Margem interna */
+  padding: 5%;
+  /* Margem interna */
 }
 
-.foto-4 { 
-  grid-area: foto-4; 
+.foto-4 {
+  grid-area: foto-4;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%; /* Margem interna */
+  padding: 5%;
+  /* Margem interna */
 }
 
-.foto-5 { 
-  grid-area: foto-5; 
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  padding: 5%; /* Margem interna */
-}
-
-.foto-6 { 
-  grid-area: foto-6; 
+.foto-5 {
+  grid-area: foto-5;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%; /* Margem interna */}
+  padding: 5%;
+  /* Margem interna */
+}
+
+.foto-6 {
+  grid-area: foto-6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  /* Margem interna */
+}
 
 
 button#buscar {
@@ -233,7 +255,11 @@ button:hover {
   color: #fff;
 }
 
-
+footer {
+  background-color: #285680;
+  border-top-right-radius: 3em;
+  border-top-left-radius: 3em;
+}
 
 /* animações para os elementos SVG */
 
@@ -241,8 +267,6 @@ svg #elementos_varal {
   -webkit-animation: sock 0.70s ease-in-out alternate 20;
   animation: sock 0.70s ease-in-out alternate 20;
 }
-
-
 
 @keyframes spring {
   from {
@@ -280,7 +304,7 @@ svg #elementos_varal {
 }
 
 .cls-2 {
-  fill: #55a67c;
+  fill: #61896c;
 }
 
 .cls-3 {
@@ -292,15 +316,15 @@ svg #elementos_varal {
 }
 
 .cls-5 {
-  fill: #95daa8;
+  fill: #9ac5a6;
 }
 
 .cls-6 {
-  fill: #e9f7ed;
+  fill: #cde2d3;
 }
 
 .cls-7 {
-  fill: #3d5945;
+  fill: #202e24;
 }
 
 .cls-8 {
@@ -312,27 +336,27 @@ svg #elementos_varal {
 }
 
 .cls-10 {
-  fill: #395a8c;
+  fill: #2b4469;
 }
 
 .cls-11 {
-  fill: #a2d3f6;
+  fill: #abceea;
 }
 
 .cls-12 {
-  fill: #2e85cc;
+  fill: #174266;
 }
 
 .cls-13 {
-  fill: #2e85cb;
+  fill: #889cba;
 }
 
 .cls-14 {
-  fill: #a1d2f6;
+  fill: #2e85cb;
 }
 
 .cls-15 {
-  fill: #395a8d;
+  fill: #a1d2f6;
 }
 
 .cls-16 {
@@ -344,45 +368,37 @@ svg #elementos_varal {
 }
 
 .cls-18 {
-  fill: #d74f82;
+  fill: #d76993;
 }
 
 .cls-19 {
-  fill: #d54e82;
-}
-
-.cls-20 {
   fill: #de598c;
 }
 
+.cls-20 {
+  fill: #9a335a;
+}
+
 .cls-21 {
-  fill: #615657;
+  fill: #ebb4c9;
 }
 
 .cls-22 {
-  fill: #feb457;
-}
-
-.cls-23 {
   fill: #333;
 }
 
-.cls-24 {
-  fill: #9f61e1;
-}
-
-.cls-25 {
+.cls-23 {
   fill: #5e59cd;
 }
 
-.cls-26 {
-  fill: #285680;
+.cls-24 {
+  fill: #47439a;
 }
 
-.cls-27 {
-  fill: #839fca;
-}
-
-.cls-28 {
+.cls-25 {
   fill: #9eb4eb;
+}
+
+.cls-26 {
+  fill: #839fca;
 }
