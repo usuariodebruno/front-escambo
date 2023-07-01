@@ -264,7 +264,8 @@ footer {
 
 /* animações para os elementos SVG */
 
-svg #elementos_varal {
+svg #Chinelo, #marca_grafica, #de_cima, #cab_chinelo,
+#vestido, #brincos {
   -webkit-animation: sock 0.70s ease-in-out alternate 20;
   animation: sock 0.70s ease-in-out alternate 20;
 }
