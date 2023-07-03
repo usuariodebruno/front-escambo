@@ -50,89 +50,35 @@ search-bar {
   margin-top: 20vh;
 }
 
-/*GRID*/
-.container-postagem {
-  display: grid;
+.detalhes {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
-  grid-auto-flow: row dense;
+  grid-auto-flow: row;
   grid-template-areas:
-    "foto-1 foto-3 foto-5"
-    "foto-2 foto-4 foto-6";
+    "area-foto area-foto area-dados1"
+    "area-foto area-foto area-dados2";
 }
 
-.bi-stars {
-  position: absolute;
-  bottom: 8;
-  right: 0;
-  top: 0;
-  margin: 10px;
-}
-
-.postagem {
+.area-foto { grid-area: area-foto;  
   position: relative;
-  width: 30vh;
-  /* Definindo a largura da imagem como 100% */
-  height: 30vh;
-  /* Definindo a altura da imagem como 100% */
-  border-radius: 10px;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.foto-1 {
+.area-dados1 { grid-area: area-dados1;   
   position: relative;
-  grid-area: foto-1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
-  /* Margem interna */
 }
 
-.foto-2 {
-  grid-area: foto-2;
+.area-dados2 { grid-area: area-dados2;   
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
-  /* Margem interna */
-}
-
-.foto-3 {
-  grid-area: foto-3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  /* Margem interna */
-}
-
-.foto-4 {
-  grid-area: foto-4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  /* Margem interna */
-}
-
-.foto-5 {
-  grid-area: foto-5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  /* Margem interna */
-}
-
-.foto-6 {
-  grid-area: foto-6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  /* Margem interna */
 }
 
 
@@ -177,8 +123,7 @@ nav.a ul {
 nav.a ul li {
   margin: 0.1em;
   margin-left: 1em;
-  color: #010101;
-  text-align: center;
+  color: whitesmoke;
 }
 
 li.a:hover {
