@@ -12,42 +12,20 @@
     <body>
         <!--NAV ICONES-->
         <div class="small_nav">
-            <div class="container">
-                <div class="itens"> 
-                    <div class="col-md-3">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <div class="card m-auto" style="max-width: 80vh;">
-                                    <div class="card-body" style="padding-right: 0px;padding-top: 0px;padding-bottom: 0px;padding-left: 0px;" >
-                                        <form class="d-flex align-items-center" action="">                                       
-                                            <input
-                                                class="form-control form-control-lg flex-shrink-1 form-control-borderless"
-                                                type="search" placeholder="busque 'camisa, 'tênis', 'brincos'"
-                                                name="searchbar" style="padding-top: 0px; padding-bottom: 0px; padding-right: 0px;">
-                                            <button class="btn btn-success" id="buscar" type="submit" style="margin-right: 1em;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
-                                                    <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
-                                                    <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
-                                                </svg>
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                    <button class="btn btn-light" style="font-weight: bold;">escambar</button>
-                    <nav class="a">
-                        <ul>
-                            <li><img src="assets/img/icons/ajuda.png" title="ajuda" >
-                            <li><img src="assets/img/icons/meus_escambo.png" title="meus escambos">
-                            <li><img src="assets/img/icons/meus_produtos.png" title="meus produtos">
-                            <li><img src="assets/img/icons/conta.png" title="minha conta"></li>
-                            <li><img src="assets/img/icons/sair.png" title="sair"></li>
-                        </ul>
-                    </nav>
-                </div>
+        <div class="container">
+            <div class="itens">                    
+                <button class="btn btn-light" style="font-weight: bold;">escambar</button>
+                <nav class="a">
+                    <ul>
+                        <li><img src="assets/img/icons/ajuda.png" title="ajuda" ><br>ajuda</li>
+                        <li><img src="assets/img/icons/meus_escambo.png" title="meus escambos"><br>escambos</li>
+                        <li><img src="assets/img/icons/meus_produtos.png" title="meus produtos"><br>produtos</li>
+                        <li><img src="assets/img/icons/conta.png" title="minha conta"><br>conta</li>
+                        <li><img src="assets/img/icons/sair.png" title="sair"><br>sair</li>
+                    </ul>
+                </nav>
             </div>
+        </div>
         </div>
 
         <!--NAV VARAL-->
@@ -325,36 +303,71 @@
         <div class="slogan">
             <h4>Vestuário que envolve você com afeto</h4>
         </div>
-
         <!--DETALHES-->        
         <div class="container">
+            <hr>
             <div class="detalhes">
-                <div class="area-foto"><img class="postagem" src="assets/img/corta-vento.jpg"></div>
-                <div class="area-dados1"><h4>corta vento </h4></div>
-                <div class="area-dados2">DADOS DOIS</div>
+                <div class="area-foto">
+                    <div class="carousel">
+                        <img id="slide" src="assets/img/corta-vento.jpg" alt="Imagem">
+                      </div>
+                </div>
+                <div class="area-dados1">
+                    <div>
+                        <h4 class="titulo_produto">corta vento</h4>
+                    </div>
+                    <div>
+                        <h6 class="descricao_afetiva">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos,
+                            e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja
+                            de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não
+                            só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.
+                            Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais
+                            recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</h6>
+                        </div>
+                    <div>
+                        <h6>tamanho: G</h6>
+                        <h6>categoria: de cima </h6>
+                        <h6>codição: excelente</h6>
+                    </div>
+                    <div>
+                        <h6>marca: nike</h6>
+                        <h6>modelo: anorak</h6>
+                    </div>
+                </div>
+                <div class="area-dados2">
+                    <a href="#">
+                        <div class="escambador_produto">
+                            <img src="assets/img/icons/conta.png">
+                            <h5>escambador proprietario</h5>
+                        </div>                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                          </svg>
+                          <small>4.5 estrelas</small>
+                    </a>
+                    <div>
+                        
+                        <a href="escambo_selecao.html">
+                        <button type="button" class="btn" style="margin-top: 2em;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16" style="padding-right: 5;">
+                                <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192Zm3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z"/>
+                              </svg>
+                            <h6>  escambar esse produto  </h6>
+                        </button>
+                        </a>
+                        
+                        <button type="button" class="btn" style="margin-top: 2em;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-chat-left-text-fill" viewBox="0 0 16 16" style="padding-right: 5;">
+                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                              </svg>
+                            <h6>  falar com o proprietario  </h6>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
-
-        <!--
-        <div class="container">
-            <h1>nossas estrelas</h1> 
-            <div class="container-postagem">
-                <div class="foto-1">
-                    <h4>corta vento </h4>
-                    <img class="postagem" src="assets/img/corta-vento.jpg">                               
-                </div>
-                <div class="foto-3">
-                    <h4>saia justa canelada</h4>
-                    <img class="postagem" src="assets/img/vestido.jpg" >
-                </div>
-                <div class="foto-5">
-                    <h4>vestilo longo estampado</h4>
-                    <img class="postagem" src="assets/img/vestido23.jpg" >
-                </div>
-            </div>
-            <hr>
-        </div>  -->
+    
         <!--BARRA DE PESQUISA -->
         <div class="container-2" id="pesquisa_barra">
             <div class="row">
@@ -451,36 +464,20 @@
             </div>
         </div>
 
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script>
-            // Obtém o elemento SVG pelo seu ID
-            const svgElement = document.getElementById('marca_grafica',);
-
-            // Define a posição inicial do elemento
-            let posicaoAtual = 0;
-
-            // Define a velocidade e a amplitude do balanço
-            const velocidade = 0.03; // ajuste conforme necessário9
-            const amplitude = 3; // ajuste conforme necessário
-
-            // Função para atualizar a posição horizontal do elemento
-            function atualizarPosicao() {
-                // Calcula a nova posição baseada no tempo e na amplitude
-                const novaPosicao = Math.sin(posicaoAtual) * amplitude;
-
-                // Aplica a transformação de translação horizontal ao elemento SVG
-                svgElement.setAttribute('transform', `translate(${novaPosicao}, 0)`);
-
-                // Atualiza a posição atual
-                posicaoAtual += velocidade;
-
-                // Chama a função novamente na próxima animação
-                requestAnimationFrame(atualizarPosicao);
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+        <script src="assets/js/varal.js"></script>       
+         <script>
+            const images = ["assets/img/corta-vento2.jpg", "assets/img/corta-vento3.jpg", "assets/img/corta-vento.jpg"]; // Adicione o caminho das suas imagens aqui
+            const slide = document.getElementById("slide");
+            let currentIndex = 0;
+          
+            function changeSlide() {
+              slide.src = images[currentIndex];
+              currentIndex = (currentIndex + 1) % images.length;
             }
-
-            // Inicia a animação
-            atualizarPosicao();
-        </script>
+          
+            setInterval(changeSlide, 3000); // Altere o tempo (em milissegundos) entre as trocas de slides conforme necessário
+          </script>
     </body>
 
     </html>
