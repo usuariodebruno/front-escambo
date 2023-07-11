@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #edeaca;
+  background-color: white;
   text-transform: lowercase;
   font-family: 'Dosis', sans-serif;
 }
@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3em;
+  margin: 1em;
 }
 
 .slogan h4 {
@@ -145,7 +145,7 @@ button#buscar {
 }
 
 .small_nav {
-  background: #2B93AD;
+  background: #CDE2D3;
 }
 
 .btn-light {
@@ -156,7 +156,7 @@ button#buscar {
 
 .itens {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: right;
 }
 
@@ -261,7 +261,7 @@ button:hover {
 }
 
 footer {
-  background-color: #285680;
+  background-color: #CDE2D3;
   border-top-right-radius: 3em;
   border-top-left-radius: 3em;
 }
