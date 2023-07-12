@@ -62,6 +62,12 @@ search-bar {
     "foto-2 foto-4 foto-6";
 }
 
+.container-postagem a {
+  text-decoration: none;
+  color: black;
+}
+
+
 .bi-stars {
   position: absolute;
   bottom: 8;
@@ -81,68 +87,72 @@ search-bar {
 }
 
 .foto-1 {
-  position: relative;
+  position: relative;  
+  flex-direction: column;
   grid-area: foto-1;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
   /* Margem interna */
+  margin-top: 5%;
 }
 
 .foto-2 {
+  position: relative;  
+  flex-direction: column;
   grid-area: foto-2;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
-  /* Margem interna */
+  margin-top: 5%;
 }
 
 .foto-3 {
+  position: relative;  
+  flex-direction: column;
   grid-area: foto-3;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
-  /* Margem interna */
+  margin-top: 5%;
 }
 
 .foto-4 {
+  position: relative;  
+  flex-direction: column;
   grid-area: foto-4;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
-  /* Margem interna */
+  margin-top: 5%;
 }
 
 .foto-5 {
+  position: relative;  
+  flex-direction: column;
   grid-area: foto-5;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
-  /* Margem interna */
+  margin-top: 5%;
 }
 
 .foto-6 {
+  position: relative;  
+  flex-direction: column;
   grid-area: foto-6;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
-  /* Margem interna */
+  margin-top: 5%;
 }
 
-
-button#buscar {
-  background-color: #2B93AD;
-}
-
-.slogan>img {
-  max-width: 100%;
-}
 
 .small_nav {
   background: #CDE2D3;
@@ -160,6 +170,7 @@ button#buscar {
   align-items: right;
 }
 
+
 nav.a {
   font-size: 14px;
   color: black;
@@ -172,6 +183,7 @@ nav.a ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  
 }
 
 
@@ -228,37 +240,20 @@ a.small-text {
   font-size: 12px;
 }
 
-#buscar {
-  border-radius: 1em;
+button#buscar {
+  border-radius: 1em;  
+  background-color: #9AC5A6;
 }
 
-button {
-  border-radius: 1em;
-  background: #2B93AD;
-  border: 0;
-  border-radius: 1em;
-  color: whitesmoke;
-  font-weight: bold;
-  font-size: 13px;
-  padding: 8px 20px;
+button#buscar:hover {
+  background-color: #61896C;
+  color: white;
 }
 
-button:active {
-  background: #87bae1;
-  color: #fff;
-  border: 0;
+button#buscar svg {
+  fill: white
 }
 
-button:focus {
-  background: #87bae1;
-  outline: none;
-  color: #fff;
-}
-
-button:hover {
-  background: #66ABE0;
-  color: #fff;
-}
 
 footer {
   background-color: #CDE2D3;

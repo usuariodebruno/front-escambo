@@ -51,50 +51,60 @@ nav.a ul li img {
 }
 
 .container-cesta {  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 0% 0%;
   grid-auto-flow: row dense;
   grid-template-areas:
-    "cesta-vem itens-vem"
-    "cesta-vai itens-vai"
-    "complementar complementar";
+    "cesta-vem cesta-vem btn_escambo"
+    "cesta-vai cesta-vai btn_escambo";
 }
 
-.cesta-vem { grid-area: cesta-vem; 
-}
-
-.itens-vem { grid-area: itens-vem; }
+.cesta-vem { grid-area: cesta-vem; }
 
 .cesta-vai { grid-area: cesta-vai; }
 
-.itens-vai { grid-area: itens-vai; }
+.btn_escambo { grid-area: btn_escambo; }
 
-.complementar { 
-  grid-area: complementar; 
-  display: flex;
-  justify-content: center;}
 
-.complementar .btn {
-  width: 50%;
-  height: 40%;
-  background-color: #2B93AD;
+/* botoes */
+.btn_escambo .btn {
+  width: 70%;
+  height: 30%;
+  background-color: #9AC5A6;
 }
+
+.btn_escambo .btn#chat {  
+  background-color: #ABCEEA;
+  margin-bottom: 3em;
+}
+
+.btn_escambo .btn#chat svg {  
+  margin-bottom: 1em;
+}
+
+.btn_escambo .btn:hover {
+  background-color: #7fc292;
+}
+
+.btn_escambo .btn#chat:hover {  
+  background-color: #8dc2ee;
+}
+/* imagens */
+.img_botao {
+  width: 3em;
+  margin-bottom: 1em;
+}
+
 img.cestas {
   width: 15em;
   border-radius: 1em;
-}
-button#buscar {
-  background-color: #2B93AD;
 }
 
 .small_nav {
   background: #CDE2D3;
 }
 
-.btn-light {
-  border-radius: 1em;
-}
 
 .itens {
   display: flex;
@@ -140,22 +150,11 @@ a.small-text {
   font-size: 12px;
 }
 
-#buscar {
-  border-radius: 1em;
-}
-
-button {
-  border-radius: 1em;
-  border: 0;
-  border-radius: 1em;
-  font-weight: bold;
-  font-size: 13px;
-}
-
 footer {
   background-color: #CDE2D3;
   border-top-right-radius: 3em;
   border-top-left-radius: 3em;
+  margin-top: 3em;
 }
 
 
